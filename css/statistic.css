@@ -1,0 +1,57 @@
+.statistic {
+	padding: 30px;
+	background: linear-gradient(to right, #211b19, #4e3427);
+}
+.boxOfListStatistic {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.listStatistic {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+.boxStatistic {
+	padding: 15px 0;
+text-align: center;
+}
+
+.boxStatistic svg{
+	width: 44px;
+	height: 44px;
+	margin-bottom: 30px;
+	fill: var(--mainColor);
+}
+
+.amountOf {
+	margin-bottom: 15px;
+	font-size: 48px;
+	color: var(--whiteColor);
+	font-weight: 200;
+	line-height: 0.75;
+}
+.descriptionStatistic {
+	font-size: 14px;
+	padding-bottom: 30px;
+	position: relative;
+	color: var(--mainColor);
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.descriptionStatistic::after{
+	position: absolute;
+	content: "";
+	width: 30px;
+	border: 1px solid var(--whiteColor);
+	transform: translate(-50%);
+	bottom: 0;
+	left: 50%;
+}
+
+.listStatistic li{
+	margin: 0 auto;
+}

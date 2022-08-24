@@ -1,0 +1,56 @@
+
+	.mainHeader{
+		margin-top: 1.5%;
+		width: 100%;
+		position: absolute;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		z-index: 1;
+		color: var(--whiteColor);
+	}
+
+	.navigation, .navigation ul{
+		display: flex;
+		align-items: center;
+		list-style: none;
+	}
+
+	.logo h1{
+		display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	.logoMain{
+		width: 50px;
+		height: 50px;
+		fill: var(--whiteColor);
+	}
+	.navigation ul li{
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 14px;
+	}
+
+	.logo{
+		display: flex;
+		align-items: center;
+		margin-left: 0px;
+	}	
+	.logo .headerTxt{
+		font-family: 'Raleway', sans-serif;
+	}
+	.search svg, .shop svg{
+		width: 20px;
+		height: 20px;
+		fill: var(--whiteColor);
+	}
+
+	.search svg:hover, .shop svg:hover, .headerTxt:hover, .logo:hover .logoMain, .logo:hover .headerTxt {
+		color: var(--mainColor);
+		fill: var(--mainColor);
+	}

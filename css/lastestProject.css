@@ -1,0 +1,175 @@
+.lastestProject {
+	margin: 0 auto;
+	padding: 3% 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.lastestProject .description{
+	max-width: 800px;
+	margin: 0 20px 30px;
+}
+.mainName {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: var(--primaryColor);
+	font-weight: 700;
+}
+
+.btnLastestProject {
+	display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.btnMenu {
+	display: block;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 9px 20px;
+	border-radius: 3px;
+	font-size: 14px;
+	border: 1px solid #ebebeb;
+	color: var(--secondaryColor);
+}
+.logicBtnLastestProject:checked ~ .btnMenu{
+	background-color: var(--buttonColor);
+	color: var(--whiteColor);
+	border-color: var(--buttonColor);
+}
+[name="btnLastestProject"]{
+	display: none;
+}
+
+.boxCarts {
+	padding: 0 30px;
+	margin: 40px 20px;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+	gap: 20px;
+}
+.contentBox {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 30%;
+	height: 50%;
+	min-width: 300px;
+	min-height: 300px;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fbfaf8;
+	color: var(--mainColor);
+	transition: 0.4s;
+}
+
+.descriptionForPic {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 30%;
+	min-height: 100px;
+	text-align: left;
+	z-index: 2;
+	background-color: inherit;
+}
+
+.descriptionForPic {
+	padding-left: 5%;
+}
+
+.descriptionForPic::before{
+position: absolute;
+margin: 0;
+padding: 0;
+top: -10px;
+left: 10%;
+box-sizing: border-box;
+content: "";
+width: 20px;
+height: 20px;
+background-color: inherit;
+transform: rotate(45deg);
+z-index: -1;
+}
+
+
+.contentBox h3:first-child{
+	font-weight: 600;
+	color: var(--mainColor);
+}
+
+.contentBox p:nth-last-child(1){
+	font-weight: 400;
+	color: #d1d1d1;
+}
+
+.contentBox:hover{
+	background-color: #25221f;
+}
+
+.contentBox:hover h3:first-child{
+	color: var(--whiteColor);
+}
+
+.contentBox:hover p:nth-last-child(1){
+	color: var(--mainColor);
+}
+.contentBox:hover .hiddenBox{
+	opacity: 100%;
+}
+
+.hiddenBox{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #25221fa0;
+	opacity: 0%;
+	transition: 0.4s;
+}
+.hiddenBox a svg{
+	width: 30px;
+	height: 100%;
+	fill: var(--whiteColor);
+	margin: 0 5px;
+	padding-bottom: 100px;
+}
+
+.hiddenBox a svg:hover{
+	fill: var(--mainColor);
+}
+.case1 {
+	background-image: url(../img/android-phone-2048px-21.jpg);
+}
+.case2 {
+	background-image: url(../img/peakpxonee.jpg);
+}
+.case3 {
+	background-image: url(../img/bookLayout.webp);
+}
+.case4 {
+	background-image: url(../img/nature.jpg);
+	background-size: 100%;
+	background-position: bottom center;
+}
+.case5 {
+	background-image: url(../img/Magazine_MockUp.png);
+}
+.case6 {
+	background-image: url(../img/Kolay_gelsin.jpg);
+}

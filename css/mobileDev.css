@@ -1,0 +1,54 @@
+.mobileDev {
+	padding: 5% 2%;
+	padding-bottom: 0;
+	width: 100%;
+	display: flex;
+}
+.mobileTxt{
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-self:center;
+	justify-content: center;
+}
+
+.descriptionBoxForMobile h3{
+font-size: 30px;
+font-weight: 600;
+color: var(--primaryColor);
+margin-bottom: 30px;
+}
+.descriptionBoxForMobile p{
+	max-width: 750px;
+	font-weight: 400;
+	line-height: 1.75;
+	color: var(--secondaryColor);
+}
+.picturePhone {
+	display: flex;
+margin-left: auto;
+}
+
+.list {
+	list-style: none;
+	padding-left: 5%;
+}
+
+.list li{
+	margin: 10px 0;
+	font-weight: 400;
+}
+.list li svg{
+	vertical-align: middle;
+	padding: 4px;
+	width: 22px;
+	height: 22px;
+	background-color: var(--mainColor);
+	border-radius: 50%;
+	fill: var(--whiteColor);
+}
+.list .description {
+	vertical-align: middle;
+	margin: 0 25px;
+	color: var(--secondaryColor);
+}

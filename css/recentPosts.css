@@ -1,0 +1,29 @@
+
+.recentPosts{
+	padding: 3%;
+}
+
+.recentPostsBox {
+	margin: 0 auto;
+max-width: 1200px;
+flex-wrap: nowrap;
+justify-content: flex-start;
+gap: 30px;
+}
+
+.descriptionForRecentPosts {
+	margin: 0 auto 30px;
+	max-width: 800px;
+	text-align: center;
+}
+
+.recentPostsContent{
+min-width: 380px;
+min-height: 380px;
+}
+
+.recentPostsSlider {
+}
+.recentPostsBox {
+
+}

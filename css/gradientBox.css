@@ -1,0 +1,28 @@
+.boxGradient {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 10%;
+	min-height: 100px;
+	background-image: linear-gradient(90deg, #211b19, #4e3427);
+}
+.textContent {
+	color: white;
+}
+.textContent h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+.textContent h2 span{
+	color:  var(--mainColor);
+}
+.textContent p{
+	color: var(--primaryColor);
+}
+.newbtn{
+	display: block;
+	margin: 0;
+	text-transform: uppercase;
+}

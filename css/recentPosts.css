@@ -18,8 +18,11 @@ gap: 30px;
 }
 
 .recentPostsContent{
-min-width: 380px;
-min-height: 380px;
+	width: 30%;
+	height: 100px;
+	background-color: bisque;
+/* min-width: 380px;
+min-height: 380px; */
 }
 
 .recentPostsSlider {

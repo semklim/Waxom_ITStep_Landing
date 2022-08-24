@@ -21,8 +21,3 @@
 .textContent p{
 	color: var(--primaryColor);
 }
-.newbtn{
-	display: block;
-	margin: 0;
-	text-transform: uppercase;
-}

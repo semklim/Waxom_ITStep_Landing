@@ -14,7 +14,6 @@ object-fit: cover;
 .introTxt{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -23,7 +22,10 @@ object-fit: cover;
 	background-color: #080601a6;
 }
 .Maintext{
-	width: 650px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 650px;
 	color: var(--whiteColor);
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -46,17 +48,4 @@ object-fit: cover;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5;
 	font-size: 16px;
-}
-
-.btnStarter{
-	padding: 14px 25px;
-	background-color: var(--buttonColor);
-	color: var(--whiteColor);
-	border: none;
-	text-transform: uppercase;
-	line-height: 1.6;
-	border-radius: 5px;
-	font-size: 14px;
-	font-weight: 800;
-	box-shadow: inset 0 -3px #736359;
 }

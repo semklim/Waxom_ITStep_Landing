@@ -4,16 +4,22 @@
 }
 .boxOfListStatistic {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 940px;
 }
 .listStatistic {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	list-style: none;
 }
+
+.listStatistic li{
+	flex: 1 1 140px;
+	max-width: 160px;
+}
+
 .boxStatistic {
 	padding: 15px 0;
 text-align: center;
@@ -50,8 +56,4 @@ text-align: center;
 	transform: translate(-50%);
 	bottom: 0;
 	left: 50%;
-}
-
-.listStatistic li{
-	margin: 0 auto;
 }

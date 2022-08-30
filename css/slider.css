@@ -1,49 +1,170 @@
-.introslider{
-	position:relative;
-	width: 100%;
+.introSlider{
+	position: relative;
 	height: 100%;
-	overflow: hidden;
 }
 
-.introslider img{
-width: 100%;
-height: 100%;
-object-fit: cover;
+.contentSlider::-webkit-scrollbar{
+	display: none;
+}
+
+.contentSlider{
+	position: relative;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	height: 100%;
+}
+
+.introSliderSvg{
+	position: absolute;
+	width: 5.5rem;
+	height: 57.6px;
+	text-align: center;
+	transform: translate(0, -50%);
+	top: 50%;
+	right: 20px;
+	fill: var(--mainColor);
+	pointer-events: none;
+	transition: 1s;
+}
+
+.introSliderSvg svg{
+	width: 100%;
+	height: 100%;
+}
+
+.leftSvg{
+	left: 20px;
+}
+
+
+.linksToEachPage{
+	width: 100%;
+	font-size: 80%;
+	position: absolute;
+	bottom: 3rem;
+	text-align: center;
+}
+
+.pointOfLink{
+	display: inline-block;
+	position: relative;
+	margin: 0 0.625rem;
+	width: 1.6em;
+	height: 1.6em;
+	border-radius: 50%;
+	background-color: var(--secondaryColor);
+	border: 0.17rem solid var(--whiteColor);
+	text-align: center;
+	transition-duration: 0.5s;
+}
+.pointOfLink a{
+	padding: 0.18rem;
+	color: transparent;
+}
+
+.pointOfLink::before{
+	display: none;
+	position: absolute;
+	content: "";
+	width: 0.5em;
+	height: 0.5em;
+	transform: translate(-50%, -50%) scale(1);
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	background-color: var(--mainColor);
+}
+
+.pointOfLink:hover {
+	border-color: var(--mainColor);
+}
+
+.pointOfLink:hover::before {
+	display: block;
+	background-color: var(--whiteColor);
+	pointer-events: none;
+}
+
+.pointOfLink:active{
+	background-color: var(--whiteColor);
+	transform: scale(0.8);
+}
+
+.pointOfLink:active::before{
+	display: block;
+	transform: translate(-50%, -50%) scale(0.7);
+	pointer-events: none;
+}
+
+.slide{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 0 0 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slideOne{
+	background-image: linear-gradient(#080601a6, #080601a6), url(../img/matterhorn.jpg);
+}
+
+.slideTwo{
+	background-image: url(../img/rocks_2.jpg);
+}
+
+.slideThree{
+	background-image: url(../img/mountain3.jpg);
+}
+
+.slideFour{
+	background-image: url(../img/water.jpg);
+}
+
+.btnSliderArrow{
+	padding: 0 20px;
+	width: 5.5rem;
+	height: 57.6px;
+	text-align: center;
+	font-size: 0;
+}
+
+.introSlider_prev{
+margin-left: 20px;
+}
+
+
+.introSlider_next{
+	margin-right: 20px;
 }
 
 .introTxt{
-	display: flex;
-	align-items: center;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	position: absolute;
-	background-color: #080601a6;
+	padding: 0 40px;
 }
-.Maintext{
+
+.mainText{
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
 	max-width: 650px;
 	color: var(--whiteColor);
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
 
-.Maintext h2{
+.mainText h2{
 	margin-bottom: 10px;
 	font-size: 52px;
 	font-weight: 800;
 }
 
-.Maintext h4{
+.mainText h4{
 	margin-bottom: 10px;
 	font-size: 36px;
 	font-weight: 500;
 }
 
-.Maintext p{
+.mainText p{
 	margin-bottom: 40px;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5;

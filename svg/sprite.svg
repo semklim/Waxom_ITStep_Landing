@@ -2,8 +2,14 @@
 
     <!-- hero slider arrow -->
 
-    <symbol id="hero-arrow" viewBox="0 0 40 73">
-        <path d="M38.026,72.979 L0.005,36.498 L38.026,0.018 L39.995,2.022 L4.066,36.498 L39.995,70.977 L38.026,72.979 Z"/>
+    <symbol id="hero-arrow-left" viewBox="0 0 40 73">
+        <path d="M038.026,72.979 L0.005,36.498 L38.026,0.018 L39.995,2.022 L04.066,36.498 L39.995,70.977 L38.026,72.979 Z"/>
+    </symbol>
+
+		    <symbol id="hero-arrow-right" viewBox="0 0 40 73">
+        <g transform="rotate(180 20 36)">
+					<path d="M038.026,72.979 L0.005,36.498 L38.026,0.018 L39.995,2.022 L04.066,36.498 L39.995,70.977 L38.026,72.979 Z"/>
+				</g>
     </symbol>
 
     <!-- arrow -->

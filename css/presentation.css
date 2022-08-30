@@ -1,33 +1,30 @@
 .presentationBox{
-	display: flex;
-	position: relative;
+	font-size: 16px;
+	padding: 110px;
 	width: 100%;
+	background-image: url(../img/presentation/desk1.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .videoPresentation{
+	display: none;
 	width: 100%;
 	object-fit: contain;
 }
 
 .presentationHeader{
+	margin: 0px auto;
 	max-width: 600px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	z-index: 2;
 	color: var(--whiteColor);
+	text-align: center;
 }
 
-	.boxlogo{
-		margin: 0px auto 15px;
-		position: relative;
-	}
 .boxlogo svg{
-	padding: 15px;
-	width: 100px;
-	height: 100px;
+	padding: 0.9em;
+	width: 6em;
+	height: 6em;
 	fill: var(--whiteColor);
 	border-radius: 50%;
 	background-color: rgba(0, 0, 0, 0.404);
@@ -37,19 +34,19 @@
 	fill: var(--mainColor);
 }
 .presentationName {
-	margin-bottom: 10px;
-	font-size: 30px;
+	margin: 0.5em 0;
+	font-size: 1.875em;
 	font-weight: 500;
 	font-family: 'Raleway', sans-serif;
 }
-.descriptionVideo,  .timeOfVideo{
+.descriptionVideo{
 	line-height: 1.6;
-	margin-bottom: 30px;
+	margin-bottom: 1.875em;
 	font-family: 'Montserrat', sans-serif;
 }
 .timeOfVideo {
 	margin: 0;
-	font-size: 14px;
+	font-size: 0.875em;
 	color: var(--mainColor);
 }
 

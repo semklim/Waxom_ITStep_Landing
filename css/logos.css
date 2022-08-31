@@ -1,5 +1,5 @@
 .logos{
-	padding: 100px 0;
+	padding: 80px 3%;
 	background-image: linear-gradient(#080601a6, #080601a6), url(../img/logos/logo-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -9,11 +9,25 @@
 .logosBox {
 	margin: 0 auto;
 	max-width: 1200px;
-	display: flex;
-	justify-content: space-between;
+	-webkit-display: flex;
+-ms-display: flex;
+-moz-display: flex;
+display: flex;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	overflow: hidden;
 }
 
-.logosBox img{
-	width: auto;
+.imgLogoBox{
+	display: block;
+	flex: 1 1 150px;	
+	max-width: 210px;
+}
+.imgLogoBox img{
+	width: 100%;
 	object-fit: contain;
 }

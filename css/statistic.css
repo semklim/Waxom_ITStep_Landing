@@ -7,10 +7,15 @@
 	max-width: 940px;
 }
 .listStatistic {
-	display: flex;
+	-webkit-display: flex;
+-ms-display: flex;
+-moz-display: flex;
+display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	justify-content: space-between;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	list-style: none;
 }
@@ -22,7 +27,7 @@
 
 .boxStatistic {
 	padding: 15px 0;
-text-align: center;
+	text-align: center;
 }
 
 .boxStatistic svg{

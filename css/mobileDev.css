@@ -2,36 +2,41 @@
 	padding: 5% 2%;
 	padding-bottom: 0;
 	width: 100%;
+}
+
+.mobileDevContainer{
+	-webkit-display: flex;
+	-ms-display: flex;
+	-moz-display: flex;
 	display: flex;
 }
 .mobileTxt{
-	margin-right: auto;
-	display: flex;
-	flex-direction: column;
-	align-self:center;
-	justify-content: center;
+	margin: auto;
+	margin-left: 0;
 }
 
 .descriptionBoxForMobile h3{
-font-size: 30px;
-font-weight: 600;
-color: var(--primaryColor);
-margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 600;
+	color: var(--primaryColor);
+	margin-bottom: 30px;
 }
 .descriptionBoxForMobile p{
+	margin-bottom: 30px;
+	font-size: 14px;
 	max-width: 750px;
 	font-weight: 400;
 	line-height: 1.75;
 	color: var(--secondaryColor);
 }
-.picturePhone {
-	display: flex;
-margin-left: auto;
+.picturePhone img{
+	width: 100%;
+	object-fit: contain;
+	vertical-align: sub;
 }
 
 .list {
-	list-style: none;
-	padding-left: 5%;
+	padding-left: 3%;
 }
 
 .list li{

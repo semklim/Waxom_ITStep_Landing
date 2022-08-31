@@ -7,8 +7,6 @@
 	<title>Waxom</title>
 	<link rel="stylesheet" href="./main.css">
  <!-- google fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&amp;family=Raleway:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </head>
 <body>
@@ -163,17 +161,17 @@
 			<use xlink:href="./svg/sprite.svg#hero-arrow-right"></use>
 		</svg>
 	</div>
-	<ul class="linksToEachPage">
-		<li class="pointOfLink point_1"><a href="#introSlider_slideFirst">#</a></li>
-		<li class="pointOfLink point_2"><a href="#introSlider_slide2">#</a></li>
-		<li class="pointOfLink point_3"><a href="#introSlider_slide3">#</a></li>
-		<li class="pointOfLink point_4"><a href="#introSlider_slidelast">#</a></li>
-	</ul>
+	<div class="linksToEachPage">
+		<a class="pointOfLink" href="#introSlider_slideFirst"></a>
+		<a class="pointOfLink" href="#introSlider_slide2"></a>
+		<a class="pointOfLink" href="#introSlider_slide3"></a>
+		<a class="pointOfLink" href="#introSlider_slidelast"></a>
+	</div>
 </section>
 
 <!-- Section What We Do -->
 
-<section class="whatWeDo">
+<section class="container whatWeDo">
 	<div class="BoxPreview">
 		<a href="#">
 			<svg class="logoWhatWeDo">
@@ -186,7 +184,7 @@
 			<div class="hrLine"></div>
 		</a>
 	</div>
-	<article class="BoxPreview">
+	<div class="BoxPreview">
 		<a href="#">
 			<svg class="logoWhatWeDo">
 				<use xlink:href="./svg/sprite.svg#sheets"></use>
@@ -197,8 +195,8 @@
 			</p>
 			<div class="hrLine"></div>
 		</a>
-	</article>
-	<article class="BoxPreview">
+	</div>
+	<div class="BoxPreview">
 		<a href="#">
 			<svg class="logoWhatWeDo">
 				<use xlink:href="./svg/sprite.svg#options"></use>
@@ -211,8 +209,8 @@
 			</p>
 			<div class="hrLine"></div>
 		</a>
-	</article>
-	<article class="BoxPreview">
+	</div>
+	<div class="BoxPreview">
 		<a href="#">
 			<svg class="logoWhatWeDo">
 				<use xlink:href="./svg/sprite.svg#folder"></use>
@@ -221,18 +219,22 @@
 			<p class="description">Lorem ipsum dolor sit amet, adipisicing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 			<div class="hrLine"></div>
 		</a>
-	</article>
+	</div>
 </section>
 
 <!-- Section gradient -->
 
 <section class="boxGradient">
-	<div class="textContent">
-		<h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
-		<p>Don't Forget to Rate the Template. Thanks so much!</p>
-	</div>
-	<div class="btnGrad">
-		<a class="btnStarter" href="#">Purchase Now</a>
+	<div class="container">
+		<div class="boxGradientContainer">
+			<div class="textContent">
+				<h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
+				<p>Don't Forget to Rate the Template. Thanks so much!</p>
+			</div>
+			<div class="btnGrad">
+				<a class="btnStarter" href="#">Purchase Now</a>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -401,50 +403,53 @@
 <!-- Section for Mobile Devices -->
 
 <section class="mobileDev">
-	<div class="picturePhone"><img src="./img/iPhone-in-hand.png" alt="Smartphone"></div>
-	<div class="mobileTxt">
-		<div class="descriptionBoxForMobile">
-			<h3>
-				Excellent for Mobile Devices.
-			</h3>
-			<p>
-				Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-			</p>
-		</div>
-			<ul class="list">
+	<div class="container mobileDevContainer">
+		<div class="picturePhone">
+			<img src="./img/iPhone-in-hand.png" alt="Smartphone"></div><!--
+			--><div class="mobileTxt">
+			<div class="descriptionBoxForMobile">
+				<h3>
+					Excellent for Mobile Devices.
+				</h3>
+				<p>
+					Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+				</p>
+			</div>
+				<ul class="list">
+					<li>
+						<svg>
+							<use xlink:href="./svg/sprite.svg#arrow"></use>
+						</svg>
+						<span class="description">
+							Nam liber tempor cum soluta nobis eleifend option
+						</span>
+					</li>
+					<li>
+					<svg>
+						<use xlink:href="./svg/sprite.svg#arrow"></use>
+					</svg>
+					<span class="description">
+						Option congue nihil imperdiet doming id quod mazim placerat facer
+					</span>
+				</li>
 				<li>
 					<svg>
 						<use xlink:href="./svg/sprite.svg#arrow"></use>
 					</svg>
 					<span class="description">
-						Nam liber tempor cum soluta nobis eleifend option
+						Eodem modo typi, qui nunc nobis videntur parum futurum
 					</span>
 				</li>
 				<li>
-				<svg>
-					<use xlink:href="./svg/sprite.svg#arrow"></use>
-				</svg>
-				<span class="description">
-					Option congue nihil imperdiet doming id quod mazim placerat facer
-				</span>
-			</li>
-			<li>
-				<svg>
-					<use xlink:href="./svg/sprite.svg#arrow"></use>
-				</svg>
-				<span class="description">
-					Eodem modo typi, qui nunc nobis videntur parum futurum
-				</span>
-			</li>
-			<li>
-				<svg>
-					<use xlink:href="./svg/sprite.svg#arrow"></use>
-				</svg>
-				<span class="description">
-					Investigationes demonstraverunt lectores
-				</span>
-			</li>
-		</ul>
+					<svg>
+						<use xlink:href="./svg/sprite.svg#arrow"></use>
+					</svg>
+					<span class="description">
+						Investigationes demonstraverunt lectores
+					</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -628,14 +633,22 @@
 <!-- Section Logos -->
 <section class="logos">
 <div class="logosBox">
-	<img src="./img/logos/logo-1.png" alt="">
-	<img src="./img/logos/logo-2.png" alt="">
-	<img src="./img/logos/logo-3.png" alt="">
-	<img src="./img/logos/logo-4.png" alt="">
+	<div class="imgLogoBox">
+		<img src="./img/logos/logo-1.png" alt="">
+	</div>
+	<div class="imgLogoBox">
+		<img src="./img/logos/logo-2.png" alt="">
+	</div>
+	<div class="imgLogoBox">
+		<img src="./img/logos/logo-3.png" alt="">
+	</div>
+	<div class="imgLogoBox">
+		<img src="./img/logos/logo-4.png" alt="">
+	</div>
 </div>
 </section>
 <footer class="footerMain">
-<div class="footerBox">
+<div class="container footerBox">
 	<h4 class="footerCopyright">
 		Copyright © 2015
 		<a class="specLink" href="#">Waxom</a>

@@ -9,8 +9,13 @@
 
 .contentSlider{
 	position: relative;
+	-webkit-display: flex;
+	-ms-display: flex;
+	-moz-display: flex;
 	display: flex;
 	overflow-x: scroll;
+	-ms-scroll-snap-type: x mandatory;
+	-webkit-scroll-snap-type: x mandatory;
 	scroll-snap-type: x mandatory;
 	height: 100%;
 }
@@ -40,66 +45,37 @@
 
 .linksToEachPage{
 	width: 100%;
-	font-size: 80%;
+	font-size: 16px;
 	position: absolute;
 	bottom: 3rem;
 	text-align: center;
 }
 
 .pointOfLink{
+	box-sizing: content-box;
 	display: inline-block;
-	position: relative;
-	margin: 0 0.625rem;
-	width: 1.6em;
-	height: 1.6em;
+	margin: 0 0.2rem;
+	width: 0.7em;
+	height: 0.7em;
 	border-radius: 50%;
 	background-color: var(--secondaryColor);
-	border: 0.17rem solid var(--whiteColor);
-	text-align: center;
-	transition-duration: 0.5s;
-}
-.pointOfLink a{
-	padding: 0.18rem;
-	color: transparent;
-}
+	transition: border 0.2s;
 
-.pointOfLink::before{
-	display: none;
-	position: absolute;
-	content: "";
-	width: 0.5em;
-	height: 0.5em;
-	transform: translate(-50%, -50%) scale(1);
-	left: 50%;
-	top: 50%;
-	border-radius: 50%;
-	background-color: var(--mainColor);
 }
-
-.pointOfLink:hover {
-	border-color: var(--mainColor);
-}
-
-.pointOfLink:hover::before {
-	display: block;
-	background-color: var(--whiteColor);
-	pointer-events: none;
-}
-
-.pointOfLink:active{
-	background-color: var(--whiteColor);
-	transform: scale(0.8);
-}
-
-.pointOfLink:active::before{
-	display: block;
-	transform: translate(-50%, -50%) scale(0.7);
-	pointer-events: none;
-}
+.linksToEachPage a:hover {
+	border: 0.2rem solid var(--mainColor);
+} 
 
 .slide{
+	-webkit-display: flex;
+	-ms-display: flex;
+	-moz-display: flex;
 	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
 	justify-content: space-between;
 	flex: 0 0 100%;
 	background-position: center center;
@@ -135,7 +111,6 @@
 margin-left: 20px;
 }
 
-
 .introSlider_next{
 	margin-right: 20px;
 }
@@ -168,5 +143,4 @@ margin-left: 20px;
 	margin-bottom: 40px;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5;
-	font-size: 16px;
 }

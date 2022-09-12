@@ -1,5 +1,12 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
 
+		<!-- Menu Burger    	-->
+		<symbol id='burger-menu' viewBox="0 0 100 80">
+				<rect width="100" height="16" rx="6"></rect>
+				<rect y="30" width="100" height="16" rx="6"></rect>
+				<rect y="60" width="100" height="16" rx="6"></rect>
+		</symbol>
+
     <!-- hero slider arrow -->
 
     <symbol id="hero-arrow-left" viewBox="0 0 40 73">

@@ -5,7 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Waxom</title>
-	<link rel="stylesheet" href="./main.css">
+	<!-- <link rel="stylesheet" href="./css/stylePreload.css"> -->
+	<link rel="stylesheet" href="./css/variables.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/slider.css">
+	<link rel="stylesheet" href="./css/whatWeDo.css">
+	<link rel="stylesheet" href="./css/gradientBox.css">
+	<link rel="stylesheet" href="./css/lastestProject.css">
+	<link rel="stylesheet" href="./css/presentation.css">
+	<link rel="stylesheet" href="./css/mobileDev.css">
+	<link rel="stylesheet" href="./css/statistic.css">
+	<link rel="stylesheet" href="./css/recentPosts.css">
+	<link rel="stylesheet" href="./css/logos.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/media.css">
  <!-- google fonts -->
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&amp;family=Raleway:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </head>
@@ -50,6 +64,57 @@
 </nav>
 </header>
 
+<!-- Burger Menu Header -->
+<header class="burgertHeader">
+	<div class="burgerMenu">
+		<svg class="burger" viewBox="0 0 30 30">
+			<rect x="0" y="0" width="30" height="4" rx='3'/>
+			<rect x="0" y="12" width="30" height="4" rx='3'/>
+			<rect x="0" y="24" width="30" height="4"  rx='3'/>
+		</svg>
+	</div>
+	<div class="logo">
+		<h1>
+			<svg class="logoMain">
+				<use xlink:href="./svg/sprite.svg#logo"></use>
+			</svg>
+		</h1>
+	</div>
+<nav class="navigation">
+	<ul>
+		<li><a class="navBtn headerTxt" href="#">Home</a></li>
+		<li><a class="navBtn headerTxt" href="#">About Us</a></li>
+		<li><a class="navBtn headerTxt" href="#lastestProject">Portfolio</a></li>
+		<li><a class="navBtn headerTxt" href="#">Features</a></li>
+		<li><a class="navBtn headerTxt" href="#">Blog</a></li>
+		<li><a class="navBtn headerTxt" href="#">Pricing</a></li>
+		<li><a class="navBtn headerTxt" href="#">Shortcodes</a></li>
+		<li><a class="navBtn headerTxt" href="#">Contact</a></li>
+		<li><a class="navBtn shop headerTxt" href="#">
+			<svg class="projects__icon">
+				<use xlink:href="./svg/sprite.svg#cart"></use>
+			</svg>
+		</a></li>
+		<li>
+			<a class="navBtn search headerTxt" href="#">
+				<svg class="projects__icon">
+					<use xlink:href="./svg/sprite.svg#search"></use>
+				</svg>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div class="navBtn search headerTxt">
+	<a class="navBtn search headerTxt" href="#">
+		<svg class="projects__icon">
+			<use xlink:href="./svg/sprite.svg#search"></use>
+		</svg>
+	</a>
+</div>
+</header>
+<!-- Burger Menu Header -->
+
+
 <!-- Section Slider -->
 
 <section class="introSlider">
@@ -60,13 +125,13 @@
 				</a>
 			<div class="introTxt">
 				<div class="mainText">
-					<h4>
+					<h4 class="font-sizeScale_f25">
 						Unique and Modern Design
 					</h4>
-					<h2>
+					<h2 class="font-sizeScale_f34">
 						Portfolio PSD Template
 					</h2>
-					<p>
+					<p class="font-sizeScale_14">
 						Nam liber tempor cum siluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 					</p>
 					<a class="btnStarter" href="#">
@@ -84,13 +149,13 @@
 			</a>
 		<div class="introTxt">
 			<div class="mainText">
-				<h4>
+				<h4 class="font-sizeScale_f25">
 					Unique and Modern Design
 				</h4>
-				<h2>
+				<h2 class="font-sizeScale_f34">
 					Portfolio PSD Template
 				</h2>
-				<p>
+				<p class="font-sizeScale_14">
 					Nam liber tempor cum siluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 				</p>
 				<a class="btnStarter" href="#">
@@ -108,13 +173,13 @@
 			</a>
 		<div class="introTxt">
 			<div class="mainText">
-				<h4>
+				<h4 class="font-sizeScale_f25">
 					Unique and Modern Design
 				</h4>
-				<h2>
+				<h2 class="font-sizeScale_f34">
 					Portfolio PSD Template
 				</h2>
-				<p>
+				<p class="font-sizeScale_14">
 					Nam liber tempor cum siluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 				</p>
 				<a class="btnStarter" href="#">
@@ -132,13 +197,13 @@
 			</a>
 		<div class="introTxt">
 			<div class="mainText">
-				<h4>
+				<h4 class="font-sizeScale_f25">
 					Unique and Modern Design
 				</h4>
-				<h2>
+				<h2 class="font-sizeScale_f34">
 					Portfolio PSD Template
 				</h2>
-				<p>
+				<p class="font-sizeScale_14">
 					Nam liber tempor cum siluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 				</p>
 				<a class="btnStarter" href="#">
@@ -231,9 +296,7 @@
 				<h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
 				<p>Don't Forget to Rate the Template. Thanks so much!</p>
 			</div>
-			<div class="btnGrad">
-				<a class="btnStarter" href="#">Purchase Now</a>
-			</div>
+				<a class="btnStarter btnGrad" href="#">Purchase Now</a>
 		</div>
 	</div>
 </section>
@@ -389,10 +452,10 @@
 				<use xlink:href="./svg/sprite.svg#video"></use>
 			</svg>
 		</div>
-		<h2 class="presentationName">
+		<h2 class="presentationName font-sizeScale_f21">
 			Waxom Video Presentation
 		</h2>
-		<p class="descriptionVideo">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium</p>
+		<p class="descriptionVideo font-sizeScale_14">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium</p>
 		<p class="timeOfVideo">03:26</p>
 	</div>
 	<video class="videoPresentation" poster="./img/presentation/video-1.jpg">
@@ -529,7 +592,7 @@
 			Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
 		</p>
 	</div>
-	<div class="recentPostsSlider">
+	<div class="container recentPostsSlider">
 		<input type="radio" name="sliderBtn" id="btnLeft">
 		<input type="radio" name="sliderBtn" id="btnRight">
 		<div class="recentPostsBoxSlider">

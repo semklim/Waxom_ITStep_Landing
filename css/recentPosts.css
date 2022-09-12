@@ -1,6 +1,4 @@
 	.recentPostsSlider{
-		margin: 0 auto;
-		max-width: 940px;
 		overflow: hidden;
 	}
 
@@ -11,12 +9,12 @@
 	.recentPostsBoxSlider {
 		margin: 0 auto;
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		transform: translateX(0px);
@@ -33,12 +31,12 @@ display: flex;
 		--duration: 0.5s;
 		position: relative;
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		flex-direction: column;
-		flex: 1 0 300px;
-		height: 300px;
+		flex: 1 0 calc(var(--container) / 3 - 40px / 3);
+		height: calc(var(--container) / 3 - 40px / 3);
 		transition: background-color var(--duration);
 	}
 
@@ -117,9 +115,9 @@ display: flex;
 	.recentPostsDescriptionForPic{
 		padding: 5% 5%;
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		flex-direction: column;
 		height: 50%;
 		justify-content: space-evenly;
@@ -143,12 +141,12 @@ display: flex;
 	.recentPostsRead{
 		margin-right: auto;
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		color: var(--mainColor);
 		transition: color 0.5s;
 	}
@@ -204,7 +202,7 @@ display: flex;
 	}
 
 	#btnRight:checked ~ .recentPostsBoxSlider{
-		transform: translateX(-320px);
+		transform: translateX(calc((100vw / 3 - 14px) * -1));
 	}
 	.recentPosts [type="radio"]{
 		display: none;

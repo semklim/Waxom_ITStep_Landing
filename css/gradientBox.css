@@ -1,8 +1,6 @@
 .boxGradient{
-	padding: 20px;
-	padding-bottom: 30px;
+	padding: 20px 40px;
 	width: 100%;
-	text-align: center;
 	background-image: linear-gradient(90deg, #211b19, #4e3427);
 
 }
@@ -12,6 +10,7 @@
 	align-items: center;
 }
 .textContent {
+	flex: 0 1 520px;
 	margin-right: auto;
 	color: white;
 }
@@ -25,4 +24,8 @@
 }
 .textContent p{
 	color: var(--primaryColor);
+}
+
+.btnGrad{
+margin: 0;
 }

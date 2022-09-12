@@ -1,16 +1,19 @@
+	.burgertHeader{
+		display: none;
+	}
 
 	.mainHeader{
 		margin-top: 1.5%;
 		width: 100%;
 		position: absolute;
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		justify-content: space-evenly;
 		-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		flex-wrap: wrap;
 		z-index: 1;
 		color: var(--whiteColor);
@@ -18,20 +21,20 @@ display: flex;
 
 	.navigation, .navigation ul{
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		list-style: none;
 	}
 
 	.logo h1{
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
     align-items: center;
     flex-wrap: nowrap;
 		font-size: 20px;
@@ -51,12 +54,12 @@ display: flex;
 
 	.logo{
 		-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
+		display: flex;
 		-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		margin-left: 0px;
 	}	
 	.logo .headerTxt{

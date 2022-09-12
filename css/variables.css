@@ -6,3 +6,7 @@
 	--whiteColor: #ffff;
 	--buttonColor: #998675;
 }
+/* Size */
+:root{
+--container: 1100px;
+}

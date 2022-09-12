@@ -1,0 +1,284 @@
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 769px) and (max-width: 1170px) {
+	.recentPostsContent{
+		flex: 1 0 calc(94vw / 3 - 40px / 3);
+		height: calc(94vw / 3 - 40px / 3);
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Large desktops and laptops */
+@media (max-width: 916px) {
+
+	.recentPostsDescriptionForPic h3, .recentPostsDescriptionForPic p{
+		margin-bottom: 5px;
+}
+}
+
+@media (max-width: 850px) {
+	.recentPostsDescriptionForPic{
+		font-size: 11px;
+	}
+	.recentPostsDescriptionForPic h3{
+		font-size: 14px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+
+	.mainHeader {
+		padding: 0 20px;
+		justify-content: unset;
+	}
+	.logo{
+		margin-right: auto;
+	}
+	.navigation ul li {
+		font-size: 14px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.font-sizeScale_f34 {
+		font-size: calc(24px + (45 - 23) * ((100vw - 320px) / (991 - 320)));
+		
+	}
+	.font-sizeScale_f25 {
+		font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (991 - 320)));
+	}
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 768px) {
+ .introSliderSvg, .btnSliderArrow {
+		display: none;
+	}
+
+	.slide{
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+	}
+
+
+		/* Header Menu Bar */
+		.mainHeader{
+			display: none;
+		}
+			/* Header Menu Bar */
+			/* Header burger Menu Bar */
+		.burgertHeader{
+			padding: 25px;
+			width: 100%;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			z-index: 30;
+		}
+		.burgerMenu{
+			margin-right: auto;
+			width: 30px;
+			height: 30px;
+			fill: var(--whiteColor);
+		}
+	
+		.navigation{
+			position: absolute;
+			display: none;
+		}
+		.navBtn{
+			margin-left: auto;
+			display: block;
+			width: 30px;
+			height: 30px;
+		}
+		.search svg{
+			width: 30px;
+			height: 30px;
+		}
+	
+		.logoMain{
+			width: 60px;
+			height: 60px;
+		}
+		/* Header burger Menu Bar */
+
+	.boxGradientContainer{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.textContent{
+		margin: 0 auto;
+	}
+	.btnGrad{
+		margin: 0 auto;
+	}
+
+	.picturePhone{
+		display: none;
+	}
+
+	.font-sizeScale_f34 {
+		font-size: calc(24px + (45 - 23) * ((100vw - 320px) / (991 - 320)));
+		
+	}
+	.font-sizeScale_f25 {
+		font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1100 - 320)));
+	}
+
+	/* Recent Posts */
+
+	.recentPostsContent {
+    flex: 1 0 calc(47vw - 20px / 2);
+    height: calc(80vw / 2 - 20px / 2);
+	}
+
+	#btnRight:checked ~ .recentPostsBoxSlider{
+		transform: translateX(calc((100vw / 2 - 7px) * -1));
+	}
+	/* Recent Posts */
+}
+
+@media (max-width: 710px) {
+	.textContent p{
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+}
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+.linksToEachPage, .introSliderSvg, .btnSliderArrow {
+	display: none;
+}
+
+.boxGradientContainer{
+	max-width: 350px;
+}
+.textContent > *{
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.textContent p{
+
+text-align: center;
+max-width: 300px;
+}
+}
+
+
+@media (max-height: 400px) and (orientation: landscape) {
+	.linksToEachPage, .introSliderSvg, .btnSliderArrow {
+		display: none;
+	}
+	.slide{
+		/* padding-top: 60px; */
+		align-items: unset;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+	}
+	
+	.introTxt{
+		padding-top: 80px;
+		display: flex;
+		align-items: center;
+	}
+
+	.mainText{
+		transform: scale(0.9);
+	}
+
+	 .mainText h2, .mainText h4 {
+		margin-bottom: 0px;
+	}
+
+	.mainText p{
+		margin-bottom: 10px;
+	}
+
+	.btnStarter{
+		transform: scale(1.1);
+	}
+
+	.contentBox{
+		flex: unset;
+		min-height: unset;
+
+		width: calc(100vw / 2 - 60px);
+    height: calc(100vh - 30px);
+	}
+
+		/* What We Do */
+	.whatWeDo{
+		padding: 0;
+		gap: 0;
+	}
+
+	.BoxPreview a .nameOfProduct{
+		font-size: 17px;
+
+	}
+
+		.BoxPreview{
+			transform: scale(0.8);
+			flex: 1 1 140px;
+		}
+
+		/* What We Do */
+
+
+	/* lastest Project */
+ .mainName, .btnLastestProject{
+		margin-bottom: 0px;
+		transform: scale(0.9);
+	}
+	.lastestProject .description{
+		margin-bottom: 10px;
+	}
+
+	.boxCarts{
+		margin: 20px;
+	}
+
+	/* lastest Project */
+
+	/* presentation */
+	.presentationBox{
+		height: 120%;
+	}
+		/* presentation */
+
+
+		/* Statistic */
+	.listStatistic .boxStatistic > *{
+		margin-bottom: 10px;
+		transform: scale(0.8);
+	}
+
+
+		/* Statistic */
+
+			/* Recent Posts */
+
+	.recentPostsContent {
+    flex: 1 0 calc(60vw / 2 - 20px / 2);
+    height: calc(60vw / 2 - 20px / 2);
+	}
+
+	#btnRight:checked ~ .recentPostsBoxSlider{
+		transform: translateX(calc((100vw / 2 - 7px) * -1));
+	}
+
+
+	/* Recent Posts */
+}

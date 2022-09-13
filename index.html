@@ -66,13 +66,15 @@
 
 <!-- Burger Menu Header -->
 <header class="burgertHeader">
-	<div class="burgerMenu">
+	<input type="radio" name="logicMenu" id="burgerMenuId">
+	<input type="radio" name="logicMenu" id="burgerCloseMenuId">
+	<label class="burgerMenu" for="burgerMenuId">
 		<svg class="burger" viewBox="0 0 30 30">
 			<rect x="0" y="0" width="30" height="4" rx='3'/>
 			<rect x="0" y="12" width="30" height="4" rx='3'/>
 			<rect x="0" y="24" width="30" height="4"  rx='3'/>
 		</svg>
-	</div>
+	</label>
 	<div class="logo">
 		<h1>
 			<svg class="logoMain">
@@ -81,29 +83,31 @@
 		</h1>
 	</div>
 <nav class="navigation">
+	<label class="closeMenuSvg" for="burgerCloseMenuId">
+		<svg class="burger closeSvg" viewBox="0 0 30 30">
+			<polyline points="0,0 30,30" fill="none" stroke="white" stroke-width="4" rx='3' ry='3'/>
+			<polyline points="0,30 30,0" fill="none" stroke="white" stroke-width="4" rx='3' ry='3'/>
+		</svg>
+	</label>
 	<ul>
 		<li><a class="navBtn headerTxt" href="#">Home</a></li>
 		<li><a class="navBtn headerTxt" href="#">About Us</a></li>
-		<li><a class="navBtn headerTxt" href="#lastestProject">Portfolio</a></li>
+		<li><a class="navBtn headerTxt" href="#lastestProject"><input type="radio" name="logicMenu" value="Portfolio">Portfolio</a></li>
 		<li><a class="navBtn headerTxt" href="#">Features</a></li>
 		<li><a class="navBtn headerTxt" href="#">Blog</a></li>
 		<li><a class="navBtn headerTxt" href="#">Pricing</a></li>
 		<li><a class="navBtn headerTxt" href="#">Shortcodes</a></li>
 		<li><a class="navBtn headerTxt" href="#">Contact</a></li>
-		<li><a class="navBtn shop headerTxt" href="#">
+	</ul>
+	<div class="shopBtn">
+		<a class="navBtn shop headerTxt" href="#">
 			<svg class="projects__icon">
 				<use xlink:href="./svg/sprite.svg#cart"></use>
 			</svg>
-		</a></li>
-		<li>
-			<a class="navBtn search headerTxt" href="#">
-				<svg class="projects__icon">
-					<use xlink:href="./svg/sprite.svg#search"></use>
-				</svg>
-			</a>
-		</li>
-	</ul>
+		</a>
+	</div>
 </nav>
+
 <div class="navBtn search headerTxt">
 	<a class="navBtn search headerTxt" href="#">
 		<svg class="projects__icon">

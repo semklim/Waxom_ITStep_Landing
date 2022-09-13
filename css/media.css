@@ -77,7 +77,9 @@
 			input[type="radio"]{
 				display: none;
 			}
-			
+			.logo{
+				margin: 0;
+			}
 		.burgertHeader{
 			padding: 25px;
 			width: 100%;
@@ -91,6 +93,7 @@
 			width: 30px;
 			height: 30px;
 			fill: var(--whiteColor);
+			cursor: pointer;
 		}
 	
 		.navigation{
@@ -99,10 +102,10 @@
 			display: block;
 			position: fixed;
 			top: 0;
-			left: 0;
+			left: -250px;
 			bottom: 0;
 			width: 240px;
-			transform: translateX(-250px);
+			transform: translateX(0px);
 			background-image: linear-gradient(90deg, hsl(20deg 33% 23% / 80%), hsl(33deg 29% 69% / 80%));
 			backdrop-filter: blur(5px);
 			border-top-right-radius: 20px;
@@ -111,15 +114,15 @@
 		}
 
 		.navigation ul{
-			padding-top: 0px;
+			padding-top: 20px;
 			text-align: center;
 			display: block;
 		}
 
 		.navigation ul li{
 			border-bottom: 1px solid white;
-			height: 30px;
-			margin-top: 3px;
+			height: 44px;
+			padding: 10px 0px;
 		}
 
 		.navigation ul li a{
@@ -165,11 +168,26 @@
 		}
 
 		#burgerMenuId:checked ~ .navigation{
-			transform: translateX(0%);
+			transform: translateX(250px);
 		} 
 
 		 #burgerMenuId:checked ~ .burgerMenu{
 			opacity: 0;
+		}
+
+		.shopBtn{
+			padding-top: 20px;
+		}
+
+		.shop{
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		.shopBtn .shop svg{
+			width: calc(20px + (30 - 20) * ((100vw - 260px) / (400 - 260)));
+			max-width: 30px;
+			height: calc(20px + (30 - 20) * ((100vh - 260px) / (400 - 260)));
 		}
 
 		/* Header burger Menu Bar End*/
@@ -239,8 +257,131 @@ max-width: 300px;
 }
 }
 
+@media (max-height: 411px){
+	.mainHeader{
+		display: none;
+	}
+		/* Header Menu Bar */
+		/* Header burger Menu Bar */
+		input[type="radio"]{
+			display: none;
+		}
+		.logo{
+			margin: 0;
+		}
+	.burgertHeader{
+		padding: 25px;
+		width: 100%;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		z-index: 30;
+	}
+	.burgerMenu{
+		margin-right: auto;
+		width: 30px;
+		height: 30px;
+		fill: var(--whiteColor);
+	}
 
-@media (max-height: 400px) and (orientation: landscape) {
+	.navigation{
+		padding: 0px 10px;
+		padding-top: 40px;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		bottom: 0;
+		width: 240px;
+		transform: translateX(0px);
+		background-image: linear-gradient(90deg, hsl(20deg 33% 23% / 80%), hsl(33deg 29% 69% / 80%));
+		backdrop-filter: blur(5px);
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		transition: 0.5s;
+	}
+
+	.navigation ul{
+		padding-top: 20px;
+		text-align: center;
+		display: block;
+	}
+
+	.navigation ul li{
+		border-bottom: 1px solid white;
+		height: 44px;
+		padding: 10px 0px;
+	}
+
+	.navigation ul li a{
+		font-size: 20px;
+		font-weight: 900;
+		color: white;
+	}
+
+
+	.closeMenuSvg{
+		margin: 0;
+		padding-left: 15px;
+	}
+
+	.closeSvg{
+		width: 30px;
+		height: 30px;
+	}
+
+
+	.search{
+		margin-left: auto;
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
+	.search svg{
+		width: 30px;
+		height: 30px;
+	}
+
+	.logoMain{
+		width: 60px;
+		height: 60px;
+	}
+
+	.burgerMenu{
+		transition: 0.5s;
+	}
+
+	.burgerMenu:hover{
+		fill: var(--mainColor);
+	}
+
+	#burgerMenuId:checked ~ .navigation{
+		transform: translateX(100%);
+	} 
+
+	 #burgerMenuId:checked ~ .burgerMenu{
+		opacity: 0;
+	}
+
+	.shopBtn{
+		padding-top: 20px;
+	}
+
+	.shop{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.shopBtn .shop svg{
+		width: calc(20px + (30 - 20) * ((100vw - 260px) / (400 - 260)));
+		max-width: 30px;
+		height: calc(20px + (30 - 20) * ((100vh - 260px) / (400 - 260)));
+	}
+
+	/* Header burger Menu Bar End*/
+}
+
+@media (max-height: 411px) and (orientation: landscape), (max-height: 411px) {
 	/* burger menu */
 
 		

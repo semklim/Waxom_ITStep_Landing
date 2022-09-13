@@ -16,7 +16,6 @@
 
 /* Large desktops and laptops */
 @media (max-width: 916px) {
-
 	.recentPostsDescriptionForPic h3, .recentPostsDescriptionForPic p{
 		margin-bottom: 5px;
 }
@@ -229,7 +228,8 @@
 	/* Recent Posts */
 }
 
-@media (max-width: 710px) {
+@media (max-width: 766px) {
+	/* gradient section */
 	.textContent p{
 		margin: 0 auto;
 		padding-bottom: 20px;
@@ -239,10 +239,12 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+		/* intro slider section */
 .linksToEachPage, .introSliderSvg, .btnSliderArrow {
 	display: none;
 }
 
+	/* gradient section */
 .boxGradientContainer{
 	max-width: 350px;
 }
@@ -251,13 +253,13 @@
 	padding-bottom: 10px;
 }
 .textContent p{
-
 text-align: center;
 max-width: 300px;
 }
 }
 
 @media (max-height: 411px){
+	/* Header */
 	.mainHeader{
 		display: none;
 	}
@@ -383,8 +385,6 @@ max-width: 300px;
 
 @media (max-height: 411px) and (orientation: landscape), (max-height: 411px) {
 	/* burger menu */
-
-		
 	.navigation{
 		width: 100%;
 		transform: translateX(-100%);
@@ -438,7 +438,7 @@ max-width: 300px;
 
 	/* burger menu end */
 
-
+/* intro slider */
 	.linksToEachPage, .introSliderSvg, .btnSliderArrow {
 		display: none;
 	}
@@ -471,13 +471,6 @@ max-width: 300px;
 		transform: scale(1.1);
 	}
 
-	.contentBox{
-		flex: unset;
-		min-height: unset;
-		width: calc(100vw / 2 - 60px);
-    height: calc(100vh - 30px);
-	}
-
 		/* What We Do */
 	.whatWeDo{
 		padding: 0;
@@ -494,8 +487,6 @@ max-width: 300px;
 			flex: 1 1 140px;
 		}
 
-		/* What We Do */
-
 
 	/* lastest Project */
  .mainName, .btnLastestProject{
@@ -506,27 +497,27 @@ max-width: 300px;
 		margin-bottom: 10px;
 	}
 
+	.contentBox{
+		flex: unset;
+		min-height: unset;
+		width: calc(100vw / 2 - 60px);
+    height: calc(100vh - 30px);
+	}
+
 	.boxCarts{
 		margin: 20px;
 	}
-
-	/* lastest Project */
 
 	/* presentation */
 	.presentationBox{
 		height: 120%;
 	}
-		/* presentation */
-
 
 		/* Statistic */
 	.listStatistic .boxStatistic > *{
 		margin-bottom: 10px;
 		transform: scale(0.8);
 	}
-
-
-		/* Statistic */
 
 			/* Recent Posts */
 

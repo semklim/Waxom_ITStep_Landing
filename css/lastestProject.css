@@ -16,7 +16,7 @@
 
 .lastestProject .description{
 	max-width: 600px;
-	margin: 0 20px 25px;
+	margin: 0 20px 10px;
 }
 .mainName {
 	margin-bottom: 20px;
@@ -37,8 +37,7 @@
 .btnMenu {
 	font-family: 'Montserrat', sans-serif;
 	display: block;
-	margin-right: 3px;
-	margin-left: 3px;
+margin: 10px 3px 0;
 	padding: 6px 20px;
 	border-radius: 3px;
 	font-size: 12px;
@@ -73,22 +72,29 @@
 	height: 33vmin;
 	min-height: 280px;
 	max-height: 350px;
-	background-position: top center;
-	background-size: auto 70%;
-	background-repeat: no-repeat;
 	background-color: #fbfaf8;
 	color: var(--mainColor);
 	transition: 0.4s;
 }
 
+.lastestProject__boxCarts__img{
+	width: 100%;
+	height: 60%;
+}
+
+.lastestProject__boxCarts__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 .descriptionForPic {
-	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	padding-left: 5%;
-	top: calc(100% - 100px);
 	position: relative;
 	width: 100%;
-	height: 30%;
-	min-height: 100px;
+	height: 40%;
 	text-align: left;
 	z-index: 2;
 	background-color: inherit;
@@ -145,6 +151,8 @@
 	opacity: 0%;
 	transition: 0.4s;
 }
+
+
 .hiddenBox a svg{
 	width: 25px;
 	height: 100%;
@@ -155,26 +163,4 @@
 
 .hiddenBox a svg:hover{
 	fill: var(--mainColor);
-}
-.case1 {
-	background-image: url(../img/android-phone-2048px-21.jpg);
-}
-.case2 {
-	background-image: url(../img/peakpxonee.jpg);
-}
-.case3 {
-	/* background-size: auto 80%; */
-	background-image: url(../img/bookLayout.webp);
-}
-.case4 {
-	background-image: url(../img/nature.jpg);
-	background-size: 100%;
-	background-position: bottom center;
-}
-.case5 {
-	background-image: url(../img/Magazine_MockUp.png);
-}
-.case6 {
-	/* background-size: auto 80%; */
-	background-image: url(../img/Kolay_gelsin.jpg);
 }

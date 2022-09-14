@@ -40,20 +40,21 @@
 }
 
 .list li{
+	display: flex;
+	align-items: center;
 	margin: 10px 0;
 	font-weight: 400;
 }
 .list li svg{
-	vertical-align: middle;
 	padding: 4px;
+	flex: 0 0 22px;
 	width: 22px;
 	height: 22px;
 	background-color: var(--mainColor);
 	border-radius: 50%;
 	fill: var(--whiteColor);
 }
-.list .description {
-	vertical-align: middle;
-	margin: 0 25px;
+.mobileTxt .list .description {
+	margin-left: calc(10px + (20 - 10) * ((100vw - 260px) / (768 - 260)));
 	color: var(--secondaryColor);
 }

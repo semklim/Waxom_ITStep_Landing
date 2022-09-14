@@ -287,14 +287,6 @@
 	}
 }
 
-@media (min-width: 600px) and (orientation: landscape) {
-	.picturePhone{
-		display: block;
-	}
-	
-}
-
-
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 		/* intro slider section */
@@ -660,4 +652,11 @@ max-width: 300px;
 	.listStatistic li:nth-child(5){
 		order: 5;
 	}
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+	.picturePhone{
+		display: flex;
+	}
+	
 }

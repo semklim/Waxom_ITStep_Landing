@@ -10,3 +10,8 @@
 :root{
 --container: 1100px;
 }
+
+/* cursor */
+:root{
+	--pointerCursor: url(../cursor/Kick_Me_Pointer.png);
+}

@@ -154,11 +154,16 @@ margin: 10px 3px 0;
 
 
 .hiddenBox a svg{
+		cursor: var(--pointerCursor), pointer;
 	width: 25px;
 	height: 100%;
 	fill: var(--whiteColor);
 	margin: 0 5px;
 	padding-bottom: 100px;
+}
+
+.hiddenBox a svg use{
+		cursor: var(--pointerCursor), pointer;
 }
 
 .hiddenBox a svg:hover{

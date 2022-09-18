@@ -174,7 +174,7 @@
 	}
 
 	.arrowBtn{
-		cursor: pointer;
+			cursor: var(--pointerCursor), pointer;
 		display: inline-block;
 		width: 20px;
 		height: 20px;
@@ -187,6 +187,7 @@
 	}
 
 	.arrowBtn svg{
+			cursor: var(--pointerCursor), pointer;
 		padding: 4px;
 		width: 100%;
 		height: 100%;

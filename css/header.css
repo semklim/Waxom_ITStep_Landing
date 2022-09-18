@@ -42,9 +42,14 @@
 	}
 
 	.logoMain{
+		cursor: var(--pointerCursor), pointer;
 		width: 50px;
 		height: 50px;
 		fill: var(--whiteColor);
+	}
+
+	.logoMain use{
+		cursor: var(--pointerCursor), pointer;
 	}
 	.navigation ul li{
 		margin-left: 10px;
@@ -66,12 +71,19 @@
 		font-family: 'Raleway', sans-serif;
 	}
 	.search svg, .shop svg{
+		cursor: var(--pointerCursor), pointer;
 		width: 20px;
 		height: 20px;
 		fill: var(--whiteColor);
+	}
+
+	.search svg use, .shop svg use{
+		cursor: var(--pointerCursor), pointer;
 	}
 
 	.search svg:hover, .shop svg:hover, .headerTxt:hover, .logo:hover .logoMain, .logo:hover .headerTxt {
 		color: var(--mainColor);
 		fill: var(--mainColor);
 	}
+
+	

@@ -1,9 +1,11 @@
 	*{
+		cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 		outline: 0;
 		scroll-behavior: smooth;
+
 	}
 
 	::selection{
@@ -36,6 +38,7 @@
 	}
 
 	a{
+		cursor: var(--pointerCursor), pointer;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -73,7 +76,6 @@
 	}
 
 	.font-sizeScale_f34 {
-		/* font-size: calc(27px + (34 - 27) * ((100vw - 320px) / (1100 - 320))); */
 		font-size: 45px;
 	}
 	.font-sizeScale_f25 {
@@ -135,7 +137,7 @@
 	}
 
 	.scrollBtn:hover {
-		cursor: pointer;
+			cursor: var(--pointerCursor), pointer;
 		background-color: var(--primaryColor);
 	}
 	.scrollBtn:active {

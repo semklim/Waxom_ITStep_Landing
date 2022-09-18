@@ -108,7 +108,7 @@
 			width: 30px;
 			height: 30px;
 			fill: var(--whiteColor);
-			cursor: pointer;
+				cursor: var(--pointerCursor), pointer;
 		}
 	
 		.navigation{
@@ -174,9 +174,16 @@
 			height: 60px;
 		}
 
+
 		.burgerMenu{
 			transition: 0.5s;
 		}
+
+		* .burgerMenu > *, .burger g, .burger g rect{
+			cursor: var(--pointerCursor), pointer;
+		}
+
+
 
 		.burgerMenu:hover{
 			fill: var(--mainColor);

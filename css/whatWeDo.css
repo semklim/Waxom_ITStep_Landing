@@ -27,6 +27,7 @@
 	fill: var(--primaryColor);
 }
 .BoxPreview a> *{
+	cursor: var(--pointerCursor), pointer;
 margin-bottom: 20px;
 }
 .logoWhatWeDo{

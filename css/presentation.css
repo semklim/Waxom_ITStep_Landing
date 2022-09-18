@@ -25,6 +25,7 @@
 }
 
 .boxlogo svg{
+		cursor: var(--pointerCursor), pointer;
 	padding: 15px;
 	width: 100px;
 	height: 100px;

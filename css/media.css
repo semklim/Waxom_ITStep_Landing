@@ -1,3 +1,8 @@
+@media (max-width:1100px) {
+	#btnRight:checked ~ .recentPostsBoxSlider{
+		transform: translateX(calc((100vw / 3 - 10px) * -1));
+	}
+}
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 }
@@ -91,7 +96,7 @@
 				margin: 0;
 			}
 		.burgertHeader{
-			padding: 25px;
+			padding: 10px 25px;
 			width: 100%;
 			position: absolute;
 			display: flex;
@@ -108,7 +113,7 @@
 	
 		.navigation{
 			padding: 0px 10px;
-			padding-top: 40px;
+			padding-top: 20px;
 			display: block;
 			position: fixed;
 			top: 0;
@@ -360,7 +365,7 @@ max-width: 300px;
 @media (max-height: 412px){
 
 	.linksToEachPage{
-		bottom: calc(8px + (30 - 8) * ((100vh - 260px) / (411 - 260)));
+		bottom: calc(8px + (48 - 8) * ((100vh - 260px) / (411 - 260)));
 	}
 
 	/* Header */
@@ -376,7 +381,7 @@ max-width: 300px;
 			margin: 0;
 		}
 	.burgertHeader{
-		padding: 25px;
+		padding: 10px 25px;
 		width: 100%;
 		position: absolute;
 		display: flex;
@@ -392,7 +397,7 @@ max-width: 300px;
 
 	.navigation{
 		padding: 0px 10px;
-		padding-top: 40px;
+		padding-top: 20px;
 		display: block;
 		position: fixed;
 		top: 0;
@@ -677,11 +682,11 @@ max-width: 300px;
 
 @media (max-width: 380px) {
 	.recentPostsContent {
-    flex: 1 0 calc(95vw);
-    height: calc(95vw);
+    flex: 1 0 calc(92vw);
+    height: calc(92vw);
 	}
 	#btnRight:checked ~ .recentPostsBoxSlider{
-		transform: translateX(calc((95vw + 20px) * -1));
+		transform: translateX(calc((92vw + 18px) * -1));
 	}
 }
 
@@ -738,9 +743,12 @@ max-width: 300px;
     color: var(--secondaryColor);
 		font-size: 10px;
 	}
-
-
-
-
 	
+}
+
+
+@media (max-width: 170px) {
+	body{
+		overflow-x: hidden	;
+	}
 }

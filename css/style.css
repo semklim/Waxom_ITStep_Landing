@@ -6,9 +6,32 @@
 		scroll-behavior: smooth;
 	}
 
+	::selection{
+		background-color: var(--mainColor);
+		color: var(--whiteColor);
+	}
+
+	::-webkit-scrollbar-track
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 10px;
+		background-color: #F5F5F5;
+	}
+	
+	::-webkit-scrollbar
+	{
+		width: 12px;
+		background-color: #F5F5F5;
+	}
+	
+	::-webkit-scrollbar-thumb
+	{
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: var(--mainColor);
+	}
+
 	body{
-		height: 100vh;
-		/* overflow-x: hidden; */
 		font-family: 'Montserrat', sans-serif;
 	}
 
@@ -62,4 +85,63 @@
 	}
 	.font-sizeScale_14 {
 		font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1100 - 320)));
+	}
+
+	.boxScrollBtn{
+		position: absolute;
+		width: 50px;
+		height: 563vh;
+		background-color: #333;
+		z-index: 999;
+		right: 0;
+		top: 0;
+	}
+
+	.scrollBtn {
+		display: block;
+		background-color:	transparent;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		border: 1px solid var(--secondaryColor);
+		border-radius: 4px;
+		position: fixed;
+		bottom: 80px;
+		right: 5px;
+		transition: background-color .3s;
+		z-index: 1000;
+	}
+	.scrollBtn::after {
+		position: absolute;
+		display: block;
+		content: "";
+		width: 20px;
+		height: 20px;
+		border-top: 3px solid var(--mainColor);
+		border-right: 3px solid var(--mainColor);
+		transform: translate(-50%, -50%) rotate(315deg);
+		left: 50%;
+		top: 60%;
+	}
+
+	.btnDw{
+		bottom: unset;
+		top: 70px;
+	}
+
+	.btnDw::after{
+		transform: translate(-50%, -50%) rotate(135deg);
+		top: 40%;
+	}
+
+	.scrollBtn:hover {
+		cursor: pointer;
+		background-color: var(--primaryColor);
+	}
+	.scrollBtn:active {
+		background-color: #555;
+	}
+	.scrollBtn.show {
+		opacity: 1;
+		visibility: visible;
 	}

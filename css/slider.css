@@ -1,6 +1,6 @@
 .introSlider{
 	position: relative;
-	height: 100%;
+	height: 100vh;
 }
 
 .contentSlider::-webkit-scrollbar{
@@ -49,7 +49,7 @@
 	width: 100%;
 	font-size: 16px;
 	position: absolute;
-	bottom: 3rem;
+	bottom: 4rem;
 	text-align: center;
 }
 
@@ -93,35 +93,35 @@
 .slideOne{
 	-moz-background-image: 
 	linear-gradient(#080601a6, #080601a6), 
-	url(../img/matterhorn.jpg);
+	url(../img/Slider/matterhorn.jpg);
 
 	-o-background-image: 
 	linear-gradient(#080601a6, #080601a6), 
-	url(../img/matterhorn.jpg);
+	url(../img/Slider/matterhorn.jpg);
 
 	-ms-background-image: 
 	linear-gradient(#080601a6, #080601a6), 
-	url(../img/matterhorn.jpg);
+	url(../img/Slider/matterhorn.jpg);
 
 	-webkit-background-image: 
 	linear-gradient(#080601a6, #080601a6), 
-	url(../img/matterhorn.jpg);
+	url(../img/Slider/matterhorn.jpg);
 
 	background-image: 
 	linear-gradient(#080601a6, #080601a6), 
-	url(../img/matterhorn.jpg);
+	url(../img/Slider/matterhorn.jpg);
 }
 
 .slideTwo{
-	background-image: url(../img/rocks_2.jpg);
+	background-image: url(../img/Slider/rocks_2.jpg);
 }
 
 .slideThree{
-	background-image: url(../img/mountain3.jpg);
+	background-image: url(../img/Slider/mountain3.jpg);
 }
 
 .slideFour{
-	background-image: url(../img/water.jpg);
+	background-image: url(../img/Slider/water.jpg);
 }
 
 .btnSliderArrow{

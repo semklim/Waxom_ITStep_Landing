@@ -202,7 +202,7 @@
 	}
 
 	#btnRight:checked ~ .recentPostsBoxSlider{
-		transform: translateX(calc((100vw / 3 - 14px) * -1));
+    transform: translateX(calc((var(--container) / 3) * -1));
 	}
 	.recentPosts [type="radio"]{
 		display: none;

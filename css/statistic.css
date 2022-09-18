@@ -1,17 +1,21 @@
 .statistic {
 	padding: 30px 0;
 	background: linear-gradient(to right, #211b19, #4e3427);
+
 }
+
 .boxOfListStatistic {
 	margin: 0 auto;
 	max-width: var(--container);
 }
+
 .listStatistic {
 	-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+	-ms-display: flex;
+	-moz-display: flex;
+	display: flex;
 	flex-wrap: wrap;
+	-webkit-align-content: center;
 	align-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
@@ -44,6 +48,7 @@ display: flex;
 	font-weight: 200;
 	line-height: 0.75;
 }
+
 .descriptionStatistic {
 	font-size: 14px;
 	padding-bottom: 30px;

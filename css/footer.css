@@ -1,8 +1,8 @@
 .footerMain {
-padding: 20px 0;
-background-color: #111111;
-color: #555;
-overflow: hidden;
+	padding: 20px 0;
+	background-color: #111111;
+	color: #555;
+	overflow: hidden;
 }
 .footerBox, .footerBox a, .footerCopyright{
 	font-weight: 400;
@@ -17,6 +17,7 @@ overflow: hidden;
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
 	justify-content: space-between;
+	-webkit-align-content: center;
 	align-content: center;
 	font-size: 13px;
 }
@@ -31,9 +32,9 @@ overflow: hidden;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	-webkit-display: flex;
--ms-display: flex;
--moz-display: flex;
-display: flex;
+	-ms-display: flex;
+	-moz-display: flex;
+	display: flex;
 }
 .footerFirstList{
 	margin-right: auto;

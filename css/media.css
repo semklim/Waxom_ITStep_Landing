@@ -30,6 +30,7 @@
 	.recentPostsDescriptionForPic{
 		font-size: 11px;
 	}
+
 	.recentPostsDescriptionForPic h3{
 		font-size: 14px;
 }
@@ -41,24 +42,26 @@
 		padding: 0 20px;
 		justify-content: unset;
 	}
+
 	.logo{
 		margin-right: auto;
 	}
+
 	.navigation ul li {
 		font-size: 14px;
 		margin-left: 5px;
 		margin-right: 5px;
 	}
+
 	.font-sizeScale_f34 {
 		font-size: calc(24px + (45 - 23) * ((100vw - 320px) / (991 - 320)));
 		
 	}
+
 	.font-sizeScale_f25 {
 		font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (991 - 320)));
 	}
-
 	/* Lastets Project section */
-
 	.lastestProject{
 		padding: 3% 0px;
 	}
@@ -80,9 +83,6 @@
 		-ms-justify-content: center;
 		justify-content: center;
 	}
-
-
-
 		/* Header Menu Bar */
 		.mainHeader{
 			display: none;
@@ -95,20 +95,27 @@
 			.logo{
 				margin: 0;
 			}
+
 		.burgertHeader{
 			padding: 10px 25px;
 			width: 100%;
 			position: absolute;
+			-webkit-display: flex;
+			-ms-display: flex;
+			-moz-display: flex;
 			display: flex;
-			align-items: center;
+			-webkit-align-items: center;
+	    -ms-align-items: center;
+		  align-items: center;
 			z-index: 30;
 		}
+
 		.burgerMenu{
 			margin-right: auto;
 			width: 30px;
 			height: 30px;
 			fill: var(--whiteColor);
-				cursor: var(--pointerCursor), pointer;
+			cursor: var(--pointerCursor), pointer;
 		}
 	
 		.navigation{
@@ -157,13 +164,13 @@
 			height: 30px;
 		}
 
-
 		.search{
 			margin-left: auto;
 			display: block;
 			width: 30px;
 			height: 30px;
 		}
+
 		.search svg{
 			width: 30px;
 			height: 30px;
@@ -174,7 +181,6 @@
 			height: 60px;
 		}
 
-
 		.burgerMenu{
 			transition: 0.5s;
 		}
@@ -182,8 +188,6 @@
 		* .burgerMenu > *, .burger g, .burger g rect{
 			cursor: var(--pointerCursor), pointer;
 		}
-
-
 
 		.burgerMenu:hover{
 			fill: var(--mainColor);
@@ -206,6 +210,7 @@
 			width: 100%;
 			text-align: center;
 		}
+
 		.shopBtn .shop svg{
 			width: calc(20px + (30 - 20) * ((100vw - 260px) / (400 - 260)));
 			max-width: 30px;
@@ -218,22 +223,24 @@
 		.boxGradient{
 			padding: 20px 10px;
 		}
-	.boxGradientContainer{
-		margin: 0 auto;
-		text-align: center;
-	}
 
-	.textContent{
-		margin: 0 auto;
-	}
+		.boxGradientContainer{
+			margin: 0 auto;
+			text-align: center;
+		}
 
-	.textContent p{
-		margin: 0 auto;
-		padding-bottom: 20px;
-	}
-	.btnGrad{
-		margin: 0 auto;
-	}
+		.textContent{
+			margin: 0 auto;
+		}
+
+		.textContent p{
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
+
+		.btnGrad{
+			margin: 0 auto;
+		}
 
 		/* Lastets Project section */
 
@@ -244,19 +251,17 @@
 		.boxCarts{
 			margin: 20px;
 		}
+
 		.mainName{
 			margin-bottom: 10px;
 			font-size: calc(18px + (25 - 18) * ((100vw - 260px) / (768 - 260)));
 		}
+
 		.lastestProject .description{
 			margin: 0 20px;
 		}
 
 	/* Mobile Dev */
-	.picturePhone{
-		display: flex;
-		align-items: flex-end;
-	}
 
 	.mobileDev{
 		padding-top: calc(2% + (4 - 2) * ((100vw - 260px) / (768 - 260)));
@@ -277,6 +282,7 @@
 		font-size: calc(24px + (45 - 23) * ((100vw - 320px) / (991 - 320)));
 		
 	}
+
 	.font-sizeScale_f25 {
 		font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1100 - 320)));
 	}
@@ -302,18 +308,6 @@
 	/* Recent Posts */
 }
 
-@media (max-width: 600px) {
-	.picturePhone{
-		display: none;
-	}
-	/* .recentPostsContent {
-    flex: 1 0 calc(50vw);
-    height: calc(95vw);
-	}
-	#btnRight:checked ~ .recentPostsBoxSlider{
-		transform: translateX(calc((95vw + 20px) * -1));
-	} */
-}
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
@@ -330,6 +324,7 @@
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
+
 .textContent p{
 text-align: center;
 max-width: 300px;
@@ -357,6 +352,7 @@ max-width: 300px;
 .boxStatistic svg{
 	margin-bottom: calc(10px + (30 - 10) * ((100vw - 260px) / (1100 - 260)));
 }
+
 .amountOf{
 	margin-bottom: calc(10px + (15 - 10	) * ((100vw - 260px) / (1100 - 260)));
 	font-size: calc(30px + (48 - 30) * ((100vw - 260px) / (1100 - 260)));
@@ -384,17 +380,25 @@ max-width: 300px;
 		input[type="radio"]{
 			display: none;
 		}
+
 		.logo{
 			margin: 0;
 		}
+
 	.burgertHeader{
 		padding: 10px 25px;
 		width: 100%;
 		position: absolute;
+		-webkit-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
 		display: flex;
-		align-items: center;
+		-webkit-align-items: center;
+	  -ms-align-items: center;
+	  align-items: center;
 		z-index: 30;
 	}
+
 	.burgerMenu{
 		margin-right: auto;
 		width: 30px;
@@ -488,6 +492,7 @@ max-width: 300px;
 		width: 100%;
 		text-align: center;
 	}
+
 	.shopBtn .shop svg{
 		width: calc(20px + (30 - 20) * ((100vw - 260px) / (400 - 260)));
 		max-width: 30px;
@@ -515,9 +520,13 @@ max-width: 300px;
     width: 100%;
     height: calc(200px + (300 - 200) * ((100vh - 260px) / (400 - 260)));
 		transform: translate(-50%, -50%);
+		-webkit-display: flex;
+		-ms-display: flex;
+		-moz-display: flex;
 		display: flex;
 		flex-direction: column;
     flex-wrap: wrap;
+		-webkit-align-content: center;
 		align-content: center;
 		pointer-events: none;
 	}
@@ -556,6 +565,7 @@ max-width: 300px;
 	 .introSliderSvg, .btnSliderArrow {
 		display: none;
 	}
+
 	.slide{
 		align-items: unset;
 		-webkit-justify-content: center;
@@ -566,7 +576,9 @@ max-width: 300px;
 	.introTxt{
 		padding-top: 50px;
 		display: flex;
-		align-items: center;
+		-webkit-align-items: center;
+	  -ms-align-items: center;
+	  align-items: center;
 	}
 
 	.mainText{
@@ -607,6 +619,7 @@ max-width: 300px;
 		margin-bottom: 0px;
 		transform: scale(0.9);
 	}
+
 	.lastestProject .description{
 		margin-bottom: 10px;
 	}
@@ -682,9 +695,32 @@ max-width: 300px;
 	#btnRight:checked ~ .recentPostsBoxSlider{
 		transform: translateX(calc((60vw / 2 + 19px) * -1));
 	}
+}
 
 
-	/* Recent Posts */
+@media (max-width: 390px) and (orientation: portrait) {
+	/* statistic section */
+	.listStatistic li:nth-child(1){
+		order: 1;
+	}
+
+	.listStatistic li:nth-child(2){
+		order: 2;
+	}
+
+	.listStatistic li:nth-child(3){
+		order: 4;
+	}
+
+	.listStatistic li:nth-child(4){
+		flex: 1 0 100%;
+		max-width: 100%;
+		order: 3;
+	}
+
+	.listStatistic li:nth-child(5){
+		order: 5;
+	}
 }
 
 @media (max-width: 380px) {
@@ -692,43 +728,16 @@ max-width: 300px;
     flex: 1 0 calc(92vw);
     height: calc(92vw);
 	}
+
 	#btnRight:checked ~ .recentPostsBoxSlider{
 		transform: translateX(calc((92vw + 18px) * -1));
 	}
 }
 
-@media (max-width: 390px) and (orientation: portrait) {
-	/* statistic section */
-	.listStatistic li:nth-child(1){
-		order: 1;
-	}
-	.listStatistic li:nth-child(2){
-		order: 2;
-	}
-	.listStatistic li:nth-child(3){
-		order: 4;
-	}
-	.listStatistic li:nth-child(4){
-		flex: 1 0 100%;
-		max-width: 100%;
-		order: 3;
-	}
-	.listStatistic li:nth-child(5){
-		order: 5;
-	}
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
-	.picturePhone{
-		display: flex;
-	}
-	
-}
-
 @media (min-width: 600px) and (orientation: landscape) and (max-height: 390px) {
 	.picturePhone{
 		width:58%;
-		display: flex;
+		display: block;
 	}
 
 	.descriptionBoxForMobile h3{

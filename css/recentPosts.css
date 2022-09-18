@@ -16,7 +16,6 @@
 		-ms-align-items: center;
 		align-items: center;
 		flex-wrap: nowrap;
-		justify-content: flex-start;
 		transform: translateX(0px);
 		transition: transform 1s;
 	}
@@ -56,6 +55,7 @@
 	}
 
 	.recentPostsContent:hover .recentPostsImg img{
+		-webkit-filter:brightness(0.5);
 		filter:brightness(0.5);
 	}
 
@@ -121,6 +121,7 @@
 		flex-direction: column;
 		height: 50%;
 		justify-content: space-evenly;
+		-webkit-box-shadow: inset 0 -0.01px 1px 0px #8c8c8c90;
 		box-shadow: inset 0 -0.01px 1px 0px #8c8c8c90;
 		color: var(--secondaryColor);
 		font-size: 12px;

@@ -28,7 +28,7 @@
 }
 .BoxPreview a> *{
 	cursor: var(--pointerCursor), pointer;
-margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 .logoWhatWeDo{
 	width: 50px;

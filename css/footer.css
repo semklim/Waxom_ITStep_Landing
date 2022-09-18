@@ -2,6 +2,7 @@
 padding: 20px 0;
 background-color: #111111;
 color: #555;
+overflow: hidden;
 }
 .footerBox, .footerBox a, .footerCopyright{
 	font-weight: 400;

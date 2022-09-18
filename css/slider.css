@@ -86,22 +86,6 @@
 }
 
 .slideOne{
-	-moz-background-image: 
-	linear-gradient(#080601a6, #080601a6), 
-	url(../img/Slider/matterhorn.webp);
-
-	-o-background-image: 
-	linear-gradient(#080601a6, #080601a6), 
-	url(../img/Slider/matterhorn.webp);
-
-	-ms-background-image: 
-	linear-gradient(#080601a6, #080601a6), 
-	url(../img/Slider/matterhorn.webp);
-
-	-webkit-background-image: 
-	linear-gradient(#080601a6, #080601a6), 
-	url(../img/Slider/matterhorn.webp);
-
 	background-image: 
 	linear-gradient(#080601a6, #080601a6), 
 	url(../img/Slider/matterhorn.webp);

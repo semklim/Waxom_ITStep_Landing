@@ -152,8 +152,12 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a, .scrollBtn:hover, .logoMain, .logoMain use, .search svg, .shop svg, .search svg use, .shop svg use, .BoxPreview a> *, .hiddenBox a svg, .hiddenBox a svg use, .boxlogo svg, .arrowBtn, .arrowBtn svg{
 	cursor: var(--pointerCursor), pointer;
+}
+
+a{
+
 	color: inherit;
 	text-decoration: none;
 }
@@ -254,7 +258,7 @@ ul{
 }
 
 .scrollBtn:hover {
-		cursor: var(--pointerCursor), pointer;
+	
 	background-color: var(--primaryColor);
 }
 .scrollBtn:active {
@@ -312,14 +316,14 @@ ul{
 }
 
 .logoMain{
-	cursor: var(--pointerCursor), pointer;
+
 	width: 50px;
 	height: 50px;
 	fill: var(--whiteColor);
 }
 
 .logoMain use{
-	cursor: var(--pointerCursor), pointer;
+
 }
 .navigation ul li{
 	margin-left: 10px;
@@ -341,14 +345,14 @@ ul{
 	font-family: 'Raleway', sans-serif;
 }
 .search svg, .shop svg{
-	cursor: var(--pointerCursor), pointer;
+
 	width: 20px;
 	height: 20px;
 	fill: var(--whiteColor);
 }
 
 .search svg use, .shop svg use{
-	cursor: var(--pointerCursor), pointer;
+
 }
 
 .search svg:hover, .shop svg:hover, .headerTxt:hover, .logo:hover .logoMain, .logo:hover .headerTxt {
@@ -448,20 +452,20 @@ ul{
 .slideOne{
 	background-image: 
 	linear-gradient(#080601a6, #080601a6), 
-	url(../img/Slider/matterhorn.webp);
+	url(../img/Slider/matterhorn.jpg);
 }
 
 .slideTwo{
-	background-image: url(../img/Slider/rocks_2.webp);
+	background-image: url(../img/Slider/rocks_2.jpg);
 	
 }
 
 .slideThree{
-	background-image: url(../img/Slider/mountain3.webp);
+	background-image: url(../img/Slider/mountain3.jpg);
 }
 
 .slideFour{
-	background-image: url(../img/Slider/water.webp);
+	background-image: url(../img/Slider/water.jpg);
 }
 
 .btnSliderArrow{
@@ -539,7 +543,7 @@ ul{
 	fill: var(--primaryColor);
 }
 .BoxPreview a> *{
-	cursor: var(--pointerCursor), pointer;
+
 	margin-bottom: 20px;
 }
 .logoWhatWeDo{
@@ -776,7 +780,7 @@ margin: 10px 3px 0;
 
 
 .hiddenBox a svg{
-	cursor: var(--pointerCursor), pointer;
+
 	width: 25px;
 	height: 100%;
 	fill: var(--whiteColor);
@@ -785,7 +789,7 @@ margin: 10px 3px 0;
 }
 
 .hiddenBox a svg use{
-		cursor: var(--pointerCursor), pointer;
+	
 }
 
 .hiddenBox a svg:hover{
@@ -801,7 +805,7 @@ margin: 10px 3px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../img/presentation/desk1.webp);
+	background-image: url(../img/presentation/desk1.jpg);
 	background-size: cover;
 	background-size: cover;
 	background-position: center center;
@@ -822,7 +826,7 @@ margin: 10px 3px 0;
 }
 
 .boxlogo svg{
-		cursor: var(--pointerCursor), pointer;
+	
 	padding: 15px;
 	width: 100px;
 	height: 100px;
@@ -1172,7 +1176,7 @@ margin-right: 20px;
 }
 
 .arrowBtn{
-		cursor: var(--pointerCursor), pointer;
+	
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -1185,7 +1189,7 @@ margin-right: 20px;
 }
 
 .arrowBtn svg{
-		cursor: var(--pointerCursor), pointer;
+	
 	padding: 4px;
 	width: 100%;
 	height: 100%;
@@ -1211,7 +1215,7 @@ margin-right: 20px;
 
 .logos{
 	padding: 80px 3%;
-	background-image: linear-gradient(#080601a6, #080601a6), url(../img/logos/logo-bg.webp);
+	background-image: linear-gradient(#080601a6, #080601a6), url(../img/logos/logo-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

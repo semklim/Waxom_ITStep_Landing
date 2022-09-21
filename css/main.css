@@ -20,15 +20,19 @@
 
 /* Preload */
 
-/* *{
+* {
+	cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline: 0;
+	scroll-behavior: smooth;
 }
+
+
 body{
-	width: 100vw;
-	height: 100vh;
-	animation: scroll 4ms 4s 1;
+
+	animation: scroll 4ms 3s 1;
 	overflow: hidden;
 	animation-fill-mode: forwards;
 }
@@ -41,13 +45,13 @@ body{
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;	
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
 	background: white;
 	opacity: 100%;
 	animation-name: stopPreload;
-	animation-delay: 4s;
+	animation-delay: 3s;
 	animation-duration: 4ms;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
@@ -69,7 +73,7 @@ body{
 	content: "";
 	-webkit-box-shadow: 0 0 6px 6px #c2b19b;
 	border-radius: 50%;
-	animation: preload 1s infinite linear;
+	animation: preload 1s 3 linear;
 }
 
 @keyframes preload {
@@ -106,22 +110,12 @@ body{
 		overflow-y: hidden;
 	}
 	100%{
-		overflow: hidden auto;
+		overflow-y: auto;
 	}
-} */
+}
 
 
 /* Global Style */
-
-*{
-	cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: 0;
-	scroll-behavior: smooth;
-
-}
 
 ::selection{
 	background-color: var(--mainColor);
@@ -157,7 +151,6 @@ a, .scrollBtn:hover, .logoMain, .logoMain use, .search svg, .shop svg, .search s
 }
 
 a{
-
 	color: inherit;
 	text-decoration: none;
 }
@@ -322,9 +315,6 @@ ul{
 	fill: var(--whiteColor);
 }
 
-.logoMain use{
-
-}
 .navigation ul li{
 	margin-left: 10px;
 	margin-right: 10px;
@@ -351,9 +341,6 @@ ul{
 	fill: var(--whiteColor);
 }
 
-.search svg use, .shop svg use{
-
-}
 
 .search svg:hover, .shop svg:hover, .headerTxt:hover, .logo:hover .logoMain, .logo:hover .headerTxt {
 	color: var(--mainColor);
@@ -788,9 +775,6 @@ margin: 10px 3px 0;
 	padding-bottom: 100px;
 }
 
-.hiddenBox a svg use{
-	
-}
 
 .hiddenBox a svg:hover{
 	fill: var(--mainColor);

@@ -1,11 +1,12 @@
 *{
+	cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline: 0;
+	scroll-behavior: smooth;
 }
 body{
-	width: 100vw;
-	height: 100vh;
 	animation: scroll 4ms 4s 1;
 	overflow: hidden;
 	animation-fill-mode: forwards;
@@ -19,8 +20,8 @@ body{
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;	
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
 	background: white;
 	opacity: 100%;
@@ -84,6 +85,6 @@ body{
 		overflow-y: hidden;
 	}
 	100%{
-		overflow: hidden auto;
+		overflow-y: auto;
 	}
 }

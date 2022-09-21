@@ -20,7 +20,7 @@
 
 /* Preload */
 
-* {
+/* * {
 	cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
 	margin: 0;
 	padding: 0;
@@ -112,7 +112,7 @@ height: 100px;
 	100%{
 		overflow: hidden auto;
 	}
-}
+} */
 
 
 /* Global Style */

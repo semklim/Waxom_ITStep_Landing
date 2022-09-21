@@ -1,4 +1,11 @@
-
+ * {
+	cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	scroll-behavior: smooth;
+}
 
 	::selection{
 		background-color: var(--mainColor);
@@ -24,6 +31,9 @@
 		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 		background-color: var(--mainColor);
 	}
+
+	
+
 
 	body{
 		width: unset;

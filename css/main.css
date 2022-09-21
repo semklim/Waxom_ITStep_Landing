@@ -147,6 +147,7 @@ body{
 	height: unset;
 	overflow: unset;
 	font-family: 'Montserrat', sans-serif;
+	background-color: white;
 }
 
 a, .scrollBtn:hover, .logoMain, .logoMain use, .search svg, .shop svg, .search svg use, .shop svg use, .BoxPreview a> *, .hiddenBox a svg, .hiddenBox a svg use, .boxlogo svg, .arrowBtn, .arrowBtn svg{

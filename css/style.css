@@ -1,12 +1,4 @@
-	*{
-		cursor: url(../cursor/Swapped_macOS_Cursor.png), default;
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		outline: 0;
-		scroll-behavior: smooth;
 
-	}
 
 	::selection{
 		background-color: var(--mainColor);
@@ -34,6 +26,9 @@
 	}
 
 	body{
+		width: unset;
+		height: unset;
+		overflow: unset;
 		font-family: 'Montserrat', sans-serif;
 	}
 
